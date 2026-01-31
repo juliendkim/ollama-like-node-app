@@ -4,10 +4,10 @@
   "description": "",
   "main": "main.js",
   "scripts": {
-    "serve": "node server.js",
-    "chat": "node chat.js",
-    "download": "node download-model.js",
-    "test": "node test-chatbot.js"
+    "serve": "node src/server.js",
+    "chat": "node src/chat.js",
+    "download": "node src/download-model.js",
+    "test": "node src/test-chatbot.js"
   },
   "keywords": [],
   "author": "",
