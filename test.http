@@ -1,0 +1,48 @@
+@baseUrl = http://localhost:3000
+### Simple Message Request
+POST {{baseUrl}}/chat
+Content-Type: application/json
+
+{
+  "message": "Hi, who are you?"
+}
+
+### Multi-turn Conversation Request
+POST {{baseUrl}}/chat
+Content-Type: application/json
+
+{
+  "messages": [
+    { "role": "user", "content": "What is the capital of South Korea?" },
+    { "role": "assistant", "content": "The capital of South Korea is Seoul." },
+    { "role": "user", "content": "What is its most famous landmark?" }
+  ]
+}
+
+### Error Case: Missing Fields
+POST {{baseUrl}}/chat
+Content-Type: application/json
+
+{
+  "wrong_field": "This should fail"
+}
+
+### Simple Message Request (Korean)
+POST {{baseUrl}}/chat
+Content-Type: application/json
+
+{
+  "message": "안녕, 넌 누구니?"
+}
+
+### Multi-turn Conversation Request (Korean)
+POST {{baseUrl}}/chat
+Content-Type: application/json
+
+{
+  "messages": [
+    { "role": "user", "content": "한국의 수도는 어디야?" },
+    { "role": "assistant", "content": "한국의 수도는 서울입니다." },
+    { "role": "user", "content": "그곳에서 가장 유명한 랜드마크는 뭐야?" }
+  ]
+}

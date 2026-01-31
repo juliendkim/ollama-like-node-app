@@ -1,0 +1,20 @@
+{
+  "name": "ollama-like-electron-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "serve": "node server.js",
+    "chat": "node chat.js",
+    "download": "node download-model.js",
+    "test": "node test-chatbot.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "@huggingface/transformers": "^3.8.1",
+    "express": "^5.2.1"
+  }
+}
