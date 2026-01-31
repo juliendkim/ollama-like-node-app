@@ -44,7 +44,7 @@ let generator;
 
 // Initialize the model
 async function initModel() {
-  console.log('Loading model from:', modelPath);
+  console.log('Loading model from:', `models/${modelId}`);
   
   try {
     // Using text-generation pipeline
