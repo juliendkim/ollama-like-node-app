@@ -1,4 +1,7 @@
 # Ollama-like Node.js App
+
+![Screenshot](screenshot.png)
+
 <details>
 <summary><strong>🇰🇷 Korean (한국어) - Click to expand</strong></summary>
 
